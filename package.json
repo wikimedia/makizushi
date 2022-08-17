@@ -1,5 +1,5 @@
 {
-  "name": "@kartotherian/makizushi",
+  "name": "@wikimedia/makizushi",
   "version": "4.0.0",
   "description": "professional maki chef",
   "main": "index.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mapbox/makizushi.git"
+    "url": "git@github.com:wikimedia/makizushi.git"
   },
   "keywords": [
     "maki",
@@ -35,5 +35,5 @@
   "bugs": {
     "url": "https://github.com/mapbox/makizushi/issues"
   },
-  "homepage": "https://github.com/mapbox/makizushi"
+  "homepage": "https://github.com/wikimedia/makizushi"
 }

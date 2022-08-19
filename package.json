@@ -1,7 +1,7 @@
 {
   "name": "@wikimedia/makizushi",
   "version": "4.0.0",
-  "description": "professional maki chef",
+  "description": "Glue to render Maki icons embedded in a map marker pin",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -36,7 +36,7 @@
   "author": "Tom MacWright",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mapbox/makizushi/issues"
+    "url": "https://phabricator.wikimedia.org/tag/kartotherian/"
   },
   "homepage": "https://github.com/wikimedia/makizushi"
 }

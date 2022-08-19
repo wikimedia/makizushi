@@ -23,14 +23,14 @@ var aliases = {
     'emergency-telephone': 'emergency-phone',
     'industrial': 'industry',
     'land-use': 'landuse',
-    'london-underground': 'rail',
+    'london-underground': 'rail-metro',
     'minefield': 'danger',
     'mobilephone': 'mobile-phone',
     'oil-well': 'industry',
     'park2': 'park',
     'polling-place': 'post',
     'rail-above': 'rail',
-    'rail-underground': 'rail',
+    'rail-underground': 'rail-metro',
     'toilets': 'toilet'
 };
 

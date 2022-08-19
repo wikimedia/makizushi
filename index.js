@@ -18,7 +18,6 @@ var sizes = { s: 11, m: 15, l: 20 },
 var aliases = {
     'america-football': 'american-football',
     'camera': 'attraction',
-    'chemist': 'pharmacy',
     'disability': 'wheelchair',
     'emergency-telephone': 'emergency-phone',
     'industrial': 'industry',
@@ -69,6 +68,10 @@ function getMarker(options, callback) {
         options.parsedTint = blend.parseTintString(options.tint);
     }
 
+    if (options.symbol in aliases) {
+        options.symbol = aliases[options.symbol];
+    }
+
     if (!options.symbol ||
         (options.symbol && options.symbol.length === 1) ||
         (options.symbol.length === 2 && !isNaN(parseInt(options.symbol)))) {
@@ -87,8 +90,7 @@ function getMarker(options, callback) {
 function loadMaki(options, callback) {
     var base = options.base + '-' + options.size + (options.retina ? '@2x' : ''),
         size = options.size,
-        resolvedSymbol = aliases[options.symbol] || options.symbol,
-        symbol = resolvedSymbol + '-' + sizes[size] + (options.retina ? '@2x' : '');
+        symbol = options.symbol + '-' + sizes[size] + (options.retina ? '@2x' : '');
 
     if (!base || !size) {
         return callback(errcode('Marker is invalid because it lacks base or size.', 'EINVALID'));
